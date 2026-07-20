@@ -1,37 +1,38 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { assetUrl } from '../lib/assets'
 
 const PROFILE_URL = 'https://www.instagram.com/talys_beauty/'
 const USERNAME = 'talys_beauty'
 
 const POSTS = [
   {
-    src: '/images/ig-nails-black.jpg',
+    src: assetUrl('images/ig-nails-black.jpg'),
     alt: 'Schwarze Nail Art mit Gold- und Marmorakzenten',
     label: 'Jet Set Nails',
   },
   {
-    src: '/images/ig-nails-floral.jpg',
+    src: assetUrl('images/ig-nails-floral.jpg'),
     alt: 'Nude Nail Art mit floralen Details',
     label: 'Nail Art',
   },
   {
-    src: '/images/ig-nails-green.jpg',
+    src: assetUrl('images/ig-nails-green.jpg'),
     alt: 'Smaragdgrüne Stiletto-Nägel',
     label: 'Statement Look',
   },
   {
-    src: '/images/ig-pedicure.jpg',
+    src: assetUrl('images/ig-pedicure.jpg'),
     alt: 'Gepflegte Pediküre',
     label: 'Fußpflege',
   },
   {
-    src: '/images/gallery-atmosphere.jpg',
+    src: assetUrl('images/gallery-atmosphere.jpg'),
     alt: 'Studio-Atmosphäre mit Maniküre',
     label: 'Studio',
   },
   {
-    src: '/images/ig-lash.jpg',
+    src: assetUrl('images/ig-lash.jpg'),
     alt: 'Wimpernlifting Ergebnis',
     label: 'Wimpernlifting',
   },

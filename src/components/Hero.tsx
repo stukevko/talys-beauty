@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
+import { assetUrl } from '../lib/assets'
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null)
@@ -17,7 +18,7 @@ export function Hero() {
     <section id="top" ref={ref} className="hero">
       <motion.div className="hero__media" style={{ y: imageY, scale: imageScale }}>
         <img
-          src="/images/hero-nails.jpg"
+          src={assetUrl('images/hero-nails.jpg')}
           alt="Luxuriöse Nail Art von Talys Beauty"
           width={1920}
           height={1080}
